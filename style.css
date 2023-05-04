@@ -186,7 +186,7 @@ i[class*=fa-sharp]::before{
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    border: 2px solid var(--color-light-white);
+    border: 2px solid var(--color-black);
 }
 
 .home__title,
