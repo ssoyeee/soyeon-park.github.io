@@ -478,6 +478,28 @@ i[class*=fa-sharp]::before{
     transform: scale(1.1);
     color: navy;
 }
+
+/* Scroll */
+.arrow-up {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    color: var(--color-white);
+    background-color: var(--color-light-blue);
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all var(--animation-duration) ease-in;
+}
+
+.arrow-up.visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
 /* for below 768px screen width */
 @media screen and (max-width: 768px) {
     .navbar__toggle-btn {
