@@ -225,8 +225,12 @@ p {
     /* Section common */
 .section {
     padding: 50px;
-    text-align: center;
+    text-align:center;
     margin: auto;
+}
+#aboutp{
+    text-decoration-color: #4d4d4d;
+    text-align:inherit;
 }
 
 .section__container {
