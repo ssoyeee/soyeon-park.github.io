@@ -12,6 +12,7 @@
 }
 
 
+
 /* Global */
 :root {
 /* Color */
@@ -184,6 +185,7 @@ p {
     font-size: 24px;
     color: var(--color-white);
     display: none;
+    font-family: 'fontAwesome';
 }
 
 
@@ -534,10 +536,12 @@ p {
         --font-micro: 12px;
         }
     .navbar__toggle-btn {
-        display: block;
-        top: 16px;
-        right: 16px;
+        display: block; 
+        top: 30px;
+        right: 26px;
+        background-color: transparent;
         font-size: var(--font-medium);
+        padding: 0;
     }
 
     #navbar{
@@ -546,6 +550,9 @@ p {
         background-color: var(--color-light-blue);
     }
 
+    .navbar__logo{
+        font-size: var(--font-large);
+    }
     .navbar__menu{
         flex-direction: column;
         text-align: center;
