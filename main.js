@@ -28,6 +28,13 @@ navbarMenu.addEventListener('click', (event) => {
     }
 });
 
+//dark theme
+// const chk = document.getElementById('chk');
+
+// chk.addEventListener('change', () => {
+// 	document.body.classList.toggle('dark');
+// });
+
 
 // Navbar toggle button for small screen
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
