@@ -15,7 +15,19 @@
 
 /* Global */
 :root {
+/* App Colors */
+--color-primary: var(--color-black);
+--color-primary-variant: var(--color-gray);
+--color-accent: var(--color-blue);
+--color-accent-variant: var(--color-orange);
+--color-text: var(--color-white);
+
+
 /* Color */
+  --color-black: #050a13;
+  --color-blue: #03e8f9;
+  --color-orange: #fd6413;
+  --color-gray: #1b1e26;
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
@@ -23,14 +35,13 @@
   --color-dark-pink: #ff6863;
   --color-dark-grey: #4d4d4d;
   --color-dark-blue: #6666ff;
-  --color-grey: #616161;
   --color-light-grey: #7c7979;
-  --color-blue: #73aace;
+  --color-dull-blue: #73aace;
   --color-yellow: #fff7d1;
-  --color-orange: #feb546;
-  --color-black: #000000;
+  --color-light-orange: #feb546;
   --color-light-blue: #91b9ee;
   --color-light-greenblue: #ccfff2;
+  /* --color-grey: #616161; */
 
   /* Font size */
   --font-large: 48px;
@@ -66,15 +77,25 @@ body {
     margin: 0;
 }
 
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+}
+
+
+
 a {
     text-decoration: none;
-    color: var(--color-white);
+    color: var(--color-text);
     display: flex;
 }
 
 ul {
     list-style: none;
-    padding-left: 0px;
+    padding: 0px;
 }
 
 li {
@@ -82,11 +103,15 @@ li {
 }
 
 button {
-    background-color: whitesmoke;
+    background-color: transparent;
     cursor: pointer;
-    border: none;
-    outline: none;
+    border: 0;
+    outline: 0;
     padding: 0;
+}
+
+button:focus{
+    outline: 1px solid var(--color-accent);
 }
 /* Typography */
 h1 {
