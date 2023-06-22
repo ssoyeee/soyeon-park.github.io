@@ -32,18 +32,25 @@
 <body>
    
     <!-- Navbar -->
-    <nav id="navbar">
-        <div class="navbar__logo">
-            <a href="#"><img class="icon-3x" src="imgs/favicon.png" alt="brand logo"></img>Soyeon</a>
-        </div>
-        <ul class="navbar__menu">
-            <li class="navbar__menu__item active" data-link="#home">Home</li>
-            <li class="navbar__menu__item" data-link="#about">About</li>
-            <li class="navbar__menu__item" data-link="#skills">Skills</li>
-            <li class="navbar__menu__item" data-link="#work">My Work</li>
-            <!-- <li class="navbar__menu__item">Testimonial</li> -->
-            <li class="navbar__menu__item" data-link="#contact">Contact</li>
-        </ul>
+    <header class="header">
+            <div class="header__logo">
+                <img class="header__logo__img" src="imgs/favicon.png" alt="brand logo"></img>
+                <h1 class="header__logo__title"><a href="#">Soyeon</a></h1>
+            </div>
+        <nav>
+            <ul class="header__menu">
+                <li><a class="header__menu__item active" href="#home">Home</a></li>
+                <li><a class="header__menu__item" href="#about">About</a></li>
+                <li><a class="header__menu__item" href="#skills">Skills</a></li>
+                <li><a class="header__menu__item" href="#work">My Work</a></li>
+                <li><a class="header__menu__item" href="#contact">Contact</a></li>
+                
+                <!--<li class="navbar__menu__item" data-link="#about">About</li>
+                <li class="navbar__menu__item" data-link="#skills">Skills</li>
+                <li class="navbar__menu__item" data-link="#work">My Work</li> -->
+                <!-- <li class="navbar__menu__item">Testimonial</li>
+                <li class="navbar__menu__item" data-link="#contact">Contact</li> -->
+            </ul>
     <!-- Toggle button -->
     <button class="navbar__toggle-btn">
         <i class="fa fa-bars fa-spin" aria-hidden="true">
@@ -59,7 +66,8 @@
             <div class="ball"></div>
         </label>
     </div> -->
-</nav>
+    </nav>
+</header>
 
     <!-- Home -->
     <section id="home">
