@@ -320,36 +320,48 @@ body.dark {
 
 /* Home */
 #home {
+    background-color: var(--color-primary);
+    color: var(--color-text);
     background: url('imgs/home-background.png') center/cover no-repeat;
-    padding: 40px;
-    padding-top: 120px;
+    padding: 5rem 1rem;
+    padding-top: 7rem;
     text-align: center; 
 }
 
 .home__avatar {
     width: 250px;
     height: 250px;
-    border-radius: 50%;
-    border: 2px solid var(--color-black);
+    object-fit: cover;
+    border: 3px solid var(--color-accent);
+    border-radius: 100%;
 }
 
-.home__title,
+.home__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.home__title--strong{
+    color: var(--color-accent);
+}
+
 .home__description{
-    color: var(--color-black);
+    font-size: 1.3rem;
 }
 
 .home__contact{
+    display: inline-block;
+    background-color: var(--color-accent);
     color: var(--color-black);
-    font-size: var(--font-regular);
-    font-weight: var(--weight-bold);
-    margin: 24px;
-    padding: 8px 12px;
-    border: 2px solid white;
-    border-radius: var(--size-border-radius);
+    font-weight: bold;
+    margin: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
 }
 
 .home__contact:hover {
-    background-color: var(--color-orange);
+    background-color: transparent;
+    color: var(--color-text);
+    outline: 2px solid var(--color-accent);
 }
     /* Section common */
 .section {
