@@ -365,9 +365,18 @@ body.dark {
 }
     /* Section common */
 .section {
-    padding: 50px;
-    text-align:center;
-    margin: auto;
+    padding: 4rem;
+    text-align: center;
+}
+
+.title{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.description {
+    font-size: 1.5rem;
+    margin: 0.5rem;
 }
 #aboutp{
     text-decoration-color: #4d4d4d;
