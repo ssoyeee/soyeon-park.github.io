@@ -57,6 +57,7 @@
   --weight-lighter: 300;
 
     /* Size */
+    --size-max-width: 1200px;
     --size-border-radius: 4px;
 
     /* Animation */
@@ -363,10 +364,15 @@ body.dark {
     color: var(--color-text);
     outline: 2px solid var(--color-accent);
 }
-    /* Section common */
+    /* Common */
 .section {
     padding: 4rem;
     text-align: center;
+}
+
+.max-container {
+    max-width: var(--size-max-width);
+    margin: auto;
 }
 
 .title{
@@ -378,10 +384,6 @@ body.dark {
     font-size: 1.5rem;
     margin: 0.5rem;
 }
-#aboutp{
-    text-decoration-color: #4d4d4d;
-    text-align:inherit;
-}
 
 .section__container {
     max-width: 1200px;
@@ -389,42 +391,58 @@ body.dark {
 }
 
     /* About */
-#about .about__majors{
+
+.majors {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 80px 0;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 2.5rem 0;
 }
 
-.major .major__icon {
-    width: 170px;
-    height: 170px;
-    line-height: 170px;
-    font-size: 70px;
-    margin: auto;
-    color: var(--color-dark-blue);
-    border:1px solid var(--color-blue);
-    border-radius: 50%;
-    margin-bottom: 16px;
-    background-color: #ffffe6;
+.major {
+    background-color: var(--color-primary-variant);
+    padding: 2rem 1rem;
+    color: var(--color-text);
+    border-radius: 1rem;
+    cursor: default;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12)
 }
-.major__icon i {
-    transition: all var(--animation-duration) ease;
+
+.major__icon {
+    font-size: 4rem;
+    margin: 1rem 0;
+    color: var(--color-accent);
+    transition: all 300ms ease;
 }
-.major__icon:hover i{
-    color: navy;
+
+.major__title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.major:hover .major__icon {
     transform: rotate(-30deg) scale(1.1);
-    transition: all 700ms ease;
 }
 
-
-.major__title, 
-.major__description {
-    color: var(--color-dark-grey);
+.schools {
+    text-align: start;
 }
 
-.major__description {
-    font-size: var(--font-small);
+.school {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+.school__name {
+    color: var(--color-primary);
+}
+
+.school__period {
+    color: var(--color-primary);
+    font-size: 0.8rem;
 }
 
 .school__logo__monroe {
