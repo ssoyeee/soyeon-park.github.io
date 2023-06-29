@@ -513,9 +513,9 @@ body.dark {
 }
 
 
-.skill {
+/* .skill {
     margin-bottom: 32px;
-}
+} */
 
 .bar{
     display: flex;
@@ -539,28 +539,7 @@ body.dark {
     background-color: var(--color-accent);
     height: 3px;
 }
-.skill__value{
-    height: 3px;
-    background-color: var(--color-light-greenblue);
-}
-.skillset__right {
-    flex-basis: 40%;
-}
 
-.tools {
-    background-color: #91b9ee;
-    border-radius: 2.5rem;
-}
-
-.etc {
-    background-color: var(--color-blue);
-    border-radius: 2.5rem;
-}
-.tools, .etc {
-    margin: auto;
-    padding: 20px;
-    
-}
 
 /* Work */
 .work__categories{
