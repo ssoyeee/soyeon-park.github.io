@@ -321,7 +321,6 @@ body.dark {
 #home {
     background-color: var(--color-primary);
     color: var(--color-text);
-    background: url('imgs/home-background.png') center/cover no-repeat;
     padding: 5rem 1rem;
     padding-top: 7rem;
     text-align: center; 
