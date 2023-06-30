@@ -189,22 +189,23 @@
 
     <!-- Work -->
     <section id="work" class="section">
+        <div class="max-container">
         <h2 class="title">My work</h2>
         <p class="description">Projects</p>
-            <div class="work__categories">
-                <button class="category__btn selected" data-filter="*">
-                    All<span class="category__count">9</span>
-                </button>
-                <button class="category__btn" data-filter="web">
-                    Web<span class="category__count">4</span>
-                </button>
-                <button class="category__btn" data-filter="mobile">
-                    Mobile<span class="category__count">2</span>
-                </button>
-                <button class="category__btn" data-filter="ai">
-                    AI<span class="category__count">2</span>
-                </button>
-            </div>
+            <ul class="categories"> 
+                <li>
+                <button class="category category--selected" data-filter="*">All<span class="category__count">9</span></button>
+                </li>
+                <li>
+                <button class="category" data-filter="web">Web<span class="category__count">4</span></button>
+                </li>
+                <li>
+                <button class="category" data-filter="mobile">Mobile<span class="category__count">2</span></button>
+                </li>
+                <li>
+                <button class="category" data-filter="ai">AI<span class="category__count">2</span></button>
+                </li>
+            </ul>
     
             <div class="work__projects">
                 <a href="https://github.com/ssoyeee/smartdogcollar" class="project" data-type="mobile" target="_blank">
