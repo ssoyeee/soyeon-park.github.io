@@ -9,22 +9,26 @@ categories.addEventListener('click', (event) => {
    if (filter == null) {
     return;
    } 
-
-   // Active menu
-   const active = document.querySelector('.category--selected');
-   active.classList.remove('category--selected');
-   event.target.classList.add('category--selected');
-
-   // Project filter
-   projectsContainer.classList.add('anim-out');
-   projects.forEach(project => {
-    if(filter === 'all' || filter === project.dataset.type) {
-        project.style.display = 'block';
-    }else {
-        project.style.display = 'none';
-    }
-   });
-   setTimeout(()=>{
-    projectsContainer.classList.remove('anim-out');
-   }, 250)
+   handleActiveSelection(event.target);
+   filterProjects(filter);
 });
+
+function handleActiveSelection(target) {
+    const active = document.querySelector('.category--selected');
+    active.classList.remove('category--selected');
+    target.classList.add('category--selected');
+}
+
+function filterProjects(filter) {
+    projects.forEach(project => {
+        if(filter === 'all' || filter === project.dataset.type) {
+            project.style.display = 'block';
+        }else {
+            project.style.display = 'none';
+        }
+       });
+       projectsContainer.classList.add('anim-out');
+       setTimeout(()=>{
+        projectsContainer.classList.remove('anim-out');
+       }, 250);
+}
