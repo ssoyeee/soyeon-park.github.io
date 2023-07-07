@@ -1,3 +1,5 @@
+'use strict';
+
 // Dark Header when scrolling down
 
 const header = document.querySelector('.header');
