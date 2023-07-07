@@ -27,3 +27,15 @@ document.addEventListener('scroll', () => {
         arrowUp.style.opacity = 0;
     }
 });
+
+// Navbar Toggle Button
+const navbarMenu = document.querySelector('.header__menu');
+const navbarToggle = document.querySelector('.header__toggle');
+navbarToggle.addEventListener('click', ()=> {
+    navbarMenu.classList.toggle('open');
+});
+
+// Close Navbar menu when menu is clicked
+navbarMenu.addEventListener('click', ()=> {
+    navbarMenu.classList.remove('open');
+})
