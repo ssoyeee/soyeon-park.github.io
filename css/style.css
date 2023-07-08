@@ -122,6 +122,10 @@
     box-sizing: border-box;
 }
 
+html { 
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Maven Pro', sans-serif;
     margin: 0;
