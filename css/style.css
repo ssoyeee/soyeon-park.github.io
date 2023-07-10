@@ -251,7 +251,6 @@ button:focus{
     margin: 2rem;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    background: var(--home-bg-gradient);
 }
 
 .home__contact:hover {
@@ -556,6 +555,7 @@ button:focus{
     background-color: var(--color-primary);
     color: var(--color-text);
     position: relative;
+    background: var(--home-bg-gradient);
 }
 
 #contact::after {
