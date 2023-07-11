@@ -24,12 +24,16 @@
     <script 
         src="https://kit.fontawesome.com/7e31ffaf2a.js" 
         crossorigin="anonymous"></script>
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- JS -->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
+    <script type="module" src="src/type.js" defer></script>
 </head>
 <body>
    
@@ -58,8 +62,8 @@
     <section id="home">
         <div class="home__container">
             <img class="home__avatar" src="imgs/profile.png" alt="Soyeon's profile" />
-            <h2 class="home__title">Hello, <br />I&#39;m <strong class="home__title--strong">Soyeon Park</strong></h2>
-            <p class="home__description">A Software Engineer currently in New Jersey, US </p>
+            <h2 class="home__title" aria-label="Hello, I'm Software Engineer Soyeon Park">Hello, <br />I&#39;m <strong class="home__title--strong">Soyeon Park</strong></h2>
+            <p class="home__description">An aspiring software engineer currently in New York City, US </p>
             <a class="home__contact" href="#contact">Contact Me</a>
         </div>
     </section>
