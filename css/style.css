@@ -15,7 +15,7 @@
   --color-black: #050a13;
   --color-blue: #03e8f9;
   --color-orange: #fd6413;
-  --color-grey: #1b1e26;
+  --color-gray: #1b1e26;
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
@@ -23,12 +23,13 @@
   --color-dark-pink: #ff6863;
   --color-dark-grey: #4d4d4d;
   --color-dark-blue: #6666ff;
-  --color-light-grey: #f1f1f1;
+  --color-light-grey: #7c7979;
   --color-dull-blue: #73aace;
   --color-yellow: #fff7d1;
   --color-light-orange: #feb546;
   --color-light-blue: #91b9ee;
   --color-light-greenblue: #ccfff2;
+  --color-light-projects: #f1f1f1;
   /* --color-grey: #616161; */
 
   /* Font size */
@@ -495,7 +496,7 @@ button:focus{
 
 .project {
     position: relative;
-    background-color: var(--color-light-grey);
+    background-color: var(--color-light-projects);
     border-radius: 8px;
     overflow: hidden;
 }
