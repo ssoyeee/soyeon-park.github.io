@@ -482,7 +482,10 @@ button:focus{
 
 .projects {
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
     grid-template-columns: 288px 288px 288px 288px;
+    
     grid-template-rows: 180px 180px;
     row-gap: 30px;
     column-gap: 30px;
@@ -671,6 +674,7 @@ button:focus{
 
     .projects{
         grid-template-columns: repeat(2, 1fr);
+        
     }
 
     .arrow-up {
